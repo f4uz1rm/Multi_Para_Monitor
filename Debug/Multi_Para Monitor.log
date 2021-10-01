@@ -1,0 +1,153 @@
+﻿Build started 10/1/2021 1:44:06 PM.
+     1>Project "C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Multi_Para Monitor.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc"stdafx.h" /Fp"Debug\Multi_Para Monitor.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yu"stdafx.h" /Fp"Debug\Multi_Para Monitor.pch" /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt ColorStatic.cpp ComPort.cpp ComWatchThread.cpp DebugInfoDlg.cpp kirim.cpp MainDlg.cpp "Multi_Para Monitor.cpp" "Multi_Para MonitorDlg.cpp" NbpCaliDlg.cpp NibpInfo.cpp SetPatientDlg.cpp ShowTimeThread.cpp SpO2Info.cpp SpO2Wave.cpp StaticCuffPrsInfo.cpp StaticEcgInfo.cpp StaticEcgWave.cpp StaticRespInfo.cpp StaticRespWave.cpp StaticResultInfo.cpp StaticTempInfo.cpp StaticWave.cpp TransParentButton.cpp
+         TransParentButton.cpp
+         StaticWave.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.cpp(184): warning C4018: '<': signed/unsigned mismatch
+         StaticTempInfo.cpp
+         StaticResultInfo.cpp
+         StaticRespWave.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         StaticRespInfo.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticrespinfo.cpp(112): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+         StaticEcgWave.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         StaticEcgInfo.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticecginfo.cpp(111): warning C4244: 'argument': conversion from 'unsigned int' to 'float', possible loss of data
+         StaticCuffPrsInfo.cpp
+         SpO2Wave.cpp
+         SpO2Info.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(87): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(88): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(89): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(129): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(135): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\spo2info.cpp(141): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+         ShowTimeThread.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         SetPatientDlg.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         NibpInfo.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\nibpinfo.cpp(61): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\nibpinfo.cpp(67): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\nibpinfo.cpp(73): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\nibpinfo.cpp(79): warning C4244: 'argument': conversion from 'UINT' to 'float', possible loss of data
+         NbpCaliDlg.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         Multi_Para MonitorDlg.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(432): warning C4800: 'unsigned char': forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(444): warning C4806: '|': unsafe operation: no value of type 'bool' promoted to type '_ZUGMED_NOTIFY_LIST' can equal the given constant
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(444): warning C4554: '|': check operator precedence for possible error; use parentheses to clarify precedence
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(633): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(634): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(637): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(638): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(640): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(641): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(643): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\multi_para monitordlg.cpp(644): warning C4244: 'argument': conversion from 'double' to 'unsigned int', possible loss of data
+         Multi_Para Monitor.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+         MainDlg.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\maindlg.cpp(96): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+         kirim.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\kirim.cpp(1): warning C4627: '#include "kirim.h"': skipped when looking for precompiled header use
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\kirim.cpp(1): note: Add directive to 'stdafx.h' or rebuild precompiled header
+         DebugInfoDlg.cpp
+         Generating Code...
+         Compiling...
+         ComWatchThread.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(7): warning C4005: 'MAX_COUNT': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(4): note: see previous definition of 'MAX_COUNT'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\staticwave.h(8): warning C4005: 'DEFAULT_VALUE': macro redefinition
+         c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\packid.h(6): note: see previous definition of 'DEFAULT_VALUE'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comwatchthread.cpp(29): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comwatchthread.cpp(45): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comwatchthread.cpp(345): warning C4800: 'unsigned char': forcing value to bool 'true' or 'false' (performance warning)
+         ComPort.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(63): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(66): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(69): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(72): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(75): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(78): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(81): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\comport.cpp(84): warning C4996: '_snwprintf': This function or variable may be unsafe. Consider using _snwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstdio.h(1665): note: see declaration of '_snwprintf'
+         ColorStatic.cpp
+     1>c:\users\kq\documents\visual studio 2015\projects\multi_para monitor v3\colorstatic.cpp(155): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         c:\program files (x86)\windows kits\10\include\10.0.10150.0\ucrt\corecrt_wstring.h(204): note: see declaration of 'wcsncpy'
+         Generating Code...
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _UNICODE /D UNICODE /D _AFXDLL /l"0x0804" /IDebug\ /nologo /fo"Debug\Multi_Para Monitor.res" "Multi_Para Monitor.rc" 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Debug\Multi_Para Monitor.exe" /INCREMENTAL /NOLOGO /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\Include\Manifest\dpiaware.manifest" /Debug /PDB:"C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Debug\Multi_Para Monitor.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Debug\Multi_Para Monitor.lib" /MACHINE:X86 /SAFESEH "Debug\Multi_Para Monitor.res"
+         Debug\ColorStatic.obj
+         Debug\ComPort.obj
+         Debug\ComWatchThread.obj
+         Debug\DebugInfoDlg.obj
+         Debug\kirim.obj
+         Debug\MainDlg.obj
+         "Debug\Multi_Para Monitor.obj"
+         "Debug\Multi_Para MonitorDlg.obj"
+         Debug\NbpCaliDlg.obj
+         Debug\NibpInfo.obj
+         Debug\SetPatientDlg.obj
+         Debug\ShowTimeThread.obj
+         Debug\SpO2Info.obj
+         Debug\SpO2Wave.obj
+         Debug\StaticCuffPrsInfo.obj
+         Debug\StaticEcgInfo.obj
+         Debug\StaticEcgWave.obj
+         Debug\StaticRespInfo.obj
+         Debug\StaticRespWave.obj
+         Debug\StaticResultInfo.obj
+         Debug\StaticTempInfo.obj
+         Debug\StaticWave.obj
+         Debug\stdafx.obj
+         Debug\TransParentButton.obj
+     1>ColorStatic.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+         Multi_Para Monitor.vcxproj -> C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Debug\Multi_Para Monitor.exe
+     1>Done Building Project "C:\Users\KQ\Documents\Visual Studio 2015\Projects\Multi_Para Monitor V3\Multi_Para Monitor.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:31.65

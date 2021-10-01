@@ -1,0 +1,626 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 非特定语言(系统默认值) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENU 
+BEGIN
+    POPUP "ECG"
+    BEGIN
+        MENUITEM "Module Information",          ID_32808
+        MENUITEM "Module Status",               ID_32771
+        MENUITEM "Patient Type",                ID_ECG_PATIENTTYPE
+        POPUP "Setting ECG Lead"
+        BEGIN
+            MENUITEM "3 Leads Mode",                ID_SET_LAYOUT_3D
+            MENUITEM "5 Leads Mode",                ID_SET_LAYOUT_5D
+        END
+        POPUP "Setting Channel Lead"
+        BEGIN
+            POPUP "Channel I "
+            BEGIN
+                MENUITEM "Lead I",                      ID_CHANNELI_LEADI
+                MENUITEM "Lead II",                     ID_CHANNELI_LEADII
+                MENUITEM "Lead III",                    ID_CHANNELI_LEADIII
+                MENUITEM "Lead AVR",                    ID_CHANNELI_LEADAVR
+                MENUITEM "Lead AVL",                    ID_CHANNELI_LEADAVL
+                MENUITEM "Lead AVF",                    ID_CHANNELI_LEADAVF
+            END
+            POPUP "Channel II"
+            BEGIN
+                MENUITEM "Lead I",                      ID_CHANNELII_LEADI
+                MENUITEM "Lead II",                     ID_CHANNELII_LEADII
+                MENUITEM "Lead III",                    ID_CHANNELII_LEADIII
+                MENUITEM "Lead AVR",                    ID_CHANNELII_LEADAVR
+                MENUITEM "Lead AVL",                    ID_CHANNELII_LEADAVL
+                MENUITEM "Lead AVF",                    ID_CHANNELII_LEADAVF
+            END
+        END
+        POPUP "Wave Speed"
+        BEGIN
+            POPUP "ECG Wave Speed"
+            BEGIN
+                MENUITEM "500 dot/s",                   ID_SET_SCAN_SPEED_ECG_2MS
+                MENUITEM "250 dot/s",                   ID_SET_SCAN_SPEED_ECG_4MS
+                MENUITEM "100 dot/s",                   ID_SET_SCAN_SPEED_ECG_10MS
+            END
+            POPUP "Resp Wave Speed"
+            BEGIN
+                MENUITEM "500 dot/s",                   ID_SET_SCAN_SPEED_RESP_2MS
+                MENUITEM "250 dot/s",                   ID_SET_SCAN_SPEED_RESP_4MS
+                MENUITEM "100 dot/s",                   ID_SET_SCAN_SPEED_RESP_10MS
+                MENUITEM "50 dot/s",                    ID_SET_SCAN_SPEED_RESP_20MS
+            END
+        END
+        POPUP "1 mV Ref"
+        BEGIN
+            MENUITEM "On",                          ID_START_ECG_CAL
+            MENUITEM "Off",                         ID_STOP_ECG_CAL
+        END
+        POPUP "ECG Gain"
+        BEGIN
+            MENUITEM "X 0.25",                      ID_SET_GAIN_CHALL_X250
+            MENUITEM "X 0.5",                       ID_SET_GAIN_CHALL_X500
+            MENUITEM "X 1",                         ID_SET_GAIN_CHALL_X1000
+            MENUITEM "X 2",                         ID_SET_GAIN_CHALL_X2000
+        END
+        POPUP "Filter Mode"
+        BEGIN
+            MENUITEM "Diagnostic Mode",             ID_SET_FILTER_DIAG
+            MENUITEM "Monitor Mode",                ID_SET_FILTER_MONITOR
+            MENUITEM "HARDEST Mode",                ID_SET_FILTER_HARDEST
+            MENUITEM "Surgery Mode",                ID_SET_FILTER_SURGERY
+        END
+        POPUP "Trap Mode"
+        BEGIN
+            MENUITEM "50Hz",                        ID_SET_50HZ_TRAP
+            MENUITEM "60Hz",                        ID_SET_60HZ_TRAP
+            MENUITEM "50/60Hz",                     ID_SET_5060HZ_TRAP
+            MENUITEM "None",                        ID_SET_NO_TRAP
+        END
+        POPUP "Setting HR Channel"
+        BEGIN
+            MENUITEM "Auto",                        ID_SET_HR_AUTO
+            MENUITEM "Channel  I ",                 ID_SET_HR_CHI
+            MENUITEM "Channel II ",                 ID_SET_HR_CHII
+        END
+        POPUP "Setting Apnea Time"
+        BEGIN
+            MENUITEM "  5 s",                       ID_SET_APNEA_TIME_5S
+            MENUITEM "10 s",                        32862
+            MENUITEM "15 s",                        ID_SET_APNEA_TIME_15S
+            MENUITEM "20 s",                        ID_SETTINGAPNEATIME_20S
+        END
+        POPUP "Setting Resp Lead"
+        BEGIN
+            MENUITEM "Lead I",                      ID_SET_RESP_LEAD_I
+            MENUITEM "Lead II",                     ID_SET_RESP_LEAD_II
+        END
+        POPUP "Resp Sensitivity Level"
+        BEGIN
+            MENUITEM "Sensitivity 1",               ID_SET_RESP_SENSITIVITY_1
+            MENUITEM "Sensitivity 2",               ID_SET_RESP_SENSITIVITY_2
+            MENUITEM "Sensitivity 3",               ID_SET_RESP_SENSITIVITY_3
+            MENUITEM "Sensitivity 4",               ID_SET_RESP_SENSITIVITY_4
+            MENUITEM "Sensitivity 5(most)",         ID_SET_RESP_SENSITIVITY_5
+        END
+        POPUP "PACE"
+        BEGIN
+            MENUITEM "PACE ON",                     ID_ENABLE_PACE_DETECTION
+            MENUITEM "PACE OFF",                    ID_DISABLE_PACE_DETECTION
+        END
+        MENUITEM "Start Online Update",         33076
+    END
+    POPUP "NIBP"
+    BEGIN
+        MENUITEM "Module Information",          ID_NIBP_MODULE_INFO
+        MENUITEM "Start Measuring",             ID_NBP_START
+        MENUITEM "Stop Measuring",              ID_NIBP_STOP
+        POPUP "Measurement Mode"
+        BEGIN
+            MENUITEM "Manual Mode",                 ID_NBP_SET_MEASURE_MODE_MANUAL
+            MENUITEM "5 Min Continuous Measurement", ID_NBP_SET_MEASURE_MODE_CONT
+            POPUP "Auto Mode"
+            BEGIN
+                MENUITEM "1 Minute",                    ID_NBP_SET_MEASURE_MODE_AUTO_1MIN
+                MENUITEM "2 Minutes",                   ID_NBP_SET_MEASURE_MODE_AUTO_2MIN
+                MENUITEM "3 Minutes",                   ID_NBP_SET_MEASURE_MODE_AUTO_3MIN
+                MENUITEM "4 Minutes",                   ID_NBP_SET_MEASURE_MODE_AUTO_4MIN
+                MENUITEM "5 Minutes",                   ID_NBP_SET_MEASURE_MODE_AUTO_5MIN
+                MENUITEM "10 Minutes",                  ID_NBP_SET_MEASURE_MODE_AUTO_10MIN
+                MENUITEM "15 Minutes",                  ID_NBP_SET_MEASURE_MODE_AUTO_15MIN
+                MENUITEM "30 Minutes",                  ID_32940
+                MENUITEM "60 Minutes",                  ID_NBP_SET_MEASURE_MODE_AUTO_60MIN
+                MENUITEM "90 Minutes",                  ID_NBP_SET_MEASURE_MODE_AUTO_90MIN
+                MENUITEM "2 Hours",                     ID_NBP_SET_MEASURE_MODE_AUTO_2HOUR
+                MENUITEM "3 Hours",                     ID_NBP_SET_MEASURE_MODE_AUTO_3HOUR
+                MENUITEM "4 Hours",                     ID_NBP_SET_MEASURE_MODE_AUTO_4HOUR
+                MENUITEM "8 Hours",                     ID_NBP_SET_MEASURE_MODE_AUTO_8HOUR
+            END
+        END
+        MENUITEM "Patient Type",                ID_SET_PATIENTTYPE
+        POPUP "Setting the Pre-charging Pressure"
+        BEGIN
+            POPUP "Adult Mode"
+            BEGIN
+                MENUITEM "80  mmHg",                    ID_SET_PREINFLATE_ADULT_80MMHG
+                MENUITEM "100 mmHg",                    ID_SET_PREINFLATE_ADULT_100MMHG
+                MENUITEM "120 mmHg",                    ID_SET_PREINFLATE_ADULT_120MMHG
+                MENUITEM "140 mmHg",                    ID_SET_PREINFLATE_ADULT_140MMHG
+                MENUITEM "150 mmHg",                    ID_SET_PREINFLATE_ADULT_150MMHG
+                MENUITEM "160 mmHg",                    ID_SET_PREINFLATE_ADULT_160MMHG
+                MENUITEM "180 mmHg",                    ID_SET_PREINFLATE_ADULT_180MMHG
+                MENUITEM "200 mmHg",                    ID_SET_PREINFLATE_ADULT_200MMHG
+                MENUITEM "220 mmHg",                    ID_SET_PREINFLATE_ADULT_220MMHG
+                MENUITEM "240 mmHg",                    ID_SET_PREINFLATE_ADULT_240MMHG
+                MENUITEM "250 mmHg",                    ID_SET_PREINFLATE_ADULT_250MMHG
+                MENUITEM "260 mmHg",                    ID_SET_PREINFLATE_ADULT_260MMHG
+                MENUITEM "270 mmHg",                    ID_SET_PREINFLATE_ADULT_270MMHG
+                MENUITEM "280 mmHg",                    ID_SET_PREINFLATE_ADULT_280MMHG
+            END
+            POPUP "Child Mode"
+            BEGIN
+                MENUITEM "80 mmHg",                     ID_SET_PREINFLATE_CHILD_80MMHG
+                MENUITEM "100 mmHg",                    ID_SET_PREINFLATE_CHILD_100MMHG
+                MENUITEM "120 mmHg",                    ID_SET_PREINFLATE_CHILD_120MMHG
+                MENUITEM "140 mmHg",                    ID_SET_PREINFLATE_CHILD_140MMHG
+                MENUITEM "160 mmHg",                    ID_SET_PREINFLATE_CHILD_160MMHG
+                MENUITEM "180 mmHg",                    ID_SET_PREINFLATE_CHILD_180MMHG
+                MENUITEM "200 mmHg",                    ID_SET_PREINFLATE_CHILD_200MMHG
+            END
+            POPUP "Neonate Mode"
+            BEGIN
+                MENUITEM "60  mmHg",                    ID_SET_PREINFLATE_NEON_60MMHG
+                MENUITEM "80  mmHg",                    ID_SET_PREINFLATE_NEON_80MMHG
+                MENUITEM "100 mmHg",                    ID_SET_PREINFLATE_NEON_100MMHG
+                MENUITEM "120 mmHg",                    ID_SET_PREINFLATE_NEON_120MMHG
+            END
+        END
+        MENUITEM "Pressure Calibration",        ID_NIBP_PRSCALIBRATE
+        MENUITEM "Starting Leak Test",          ID_NBP_START_CHECK_LEAK
+        MENUITEM "Start Venipuncture",          ID_NBP_START_VENIPUNCTURE
+        POPUP "Setting the Pressure of Venipuncture"
+        BEGIN
+            POPUP "Adult Mode"
+            BEGIN
+                MENUITEM "22  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_22MMHG
+                MENUITEM "32  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_32MMHG
+                MENUITEM "42  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_42MMHG
+                MENUITEM "52  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_52MMHG
+                MENUITEM "62  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_62MMHG
+                MENUITEM "72  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_72MMHG
+                MENUITEM "82  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_82MMHG
+                MENUITEM "92  mmHg",                    ID_SET_VENIPUNCTURE_ADULT_92MMHG
+                MENUITEM "102  mmHg",                   ID_SET_VENIPUNCTURE_ADULT_102MMHG
+                MENUITEM "112  mmHg",                   ID_SET_VENIPUNCTURE_ADULT_112MMHG
+                MENUITEM "122  mmHg",                   ID_SET_VENIPUNCTURE_ADULT_122MMHG
+            END
+            POPUP "Child Mode"
+            BEGIN
+                MENUITEM "22  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_22MMHG
+                MENUITEM "32  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_32MMHG
+                MENUITEM "42  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_42MMHG
+                MENUITEM "52  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_52MMHG
+                MENUITEM "62  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_62MMHG
+                MENUITEM "72  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_72MMHG
+                MENUITEM "82  mmHg",                    ID_SET_VENIPUNCTURE_CHILD_82MMHG
+            END
+            POPUP "Newborn Mode"
+            BEGIN
+                MENUITEM "22  mmHg",                    ID_SET_VENIPUNCTURE_NEON_22MMHG
+                MENUITEM "32  mmHg",                    ID_SET_VENIPUNCTURE_NEON_32MMHG
+                MENUITEM "42  mmHg",                    ID_SET_VENIPUNCTURE_NEON_42MMHG
+                MENUITEM "52  mmHg",                    ID_SET_VENIPUNCTURE_NEON_52MMHG
+            END
+        END
+        MENUITEM "Getting Measurement Results", ID_REQUEST_TEST_RESULT
+        MENUITEM "System Self-test Results",    ID_REQUEST_POST_RESULT
+        MENUITEM "Getting Cuff Pressure",       ID_REQUEST_CUFF_PRS
+        POPUP "Setting Pressure Protection of Software"
+        BEGIN
+            MENUITEM "Enable",                      ID_ENABLE_SOFT_PROTECT
+            MENUITEM "Disable",                     ID_DISABLE_SOFT_PROTECT
+        END
+        MENUITEM "Resetting Module",            ID_NBP_RESET
+        MENUITEM "Start Online Update",         ID_NBP_START_UPDATE
+    END
+    POPUP "SpO2"
+    BEGIN
+        MENUITEM "Module Information",          ID_MODULEINFO
+        MENUITEM "Get Self-test Result",        ID_SpPO2_SELT_TEST
+        MENUITEM "Patient Type",                ID_SPO2_PATIENTTYPE
+        POPUP "Sensitivity Level"
+        BEGIN
+            MENUITEM "Sensitivity 1 (Low)",         ID_SPO2_SENSTIVITY_1
+            MENUITEM "Sensitivity 2",               ID_SPO2_SENSTIVITY_2
+            MENUITEM "Sensitivity 3",               ID_SPO2_SENSTIVITY_3
+            MENUITEM "Sensitivity 4 (High)",        ID_SPO2_SENSTIVITY_4
+        END
+        MENUITEM "Start Online Update",         ID_SPO2MODULE_UPDATE
+    END
+END
+
+#endif    // 非特定语言(系统默认值) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Multi_ParaMonitor.rc2""  // ·? Microsoft Visual C++ ±à?-μ?×ê?′\r\n"
+    "#include ""l.CHS\\afxres.rc""      // ±ê×?×é?t\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英语(非特定语言) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Multi_Para Monitor.ico"
+IDI_ICON1               ICON                    "BKPicture\\ICON.ico"
+IDI_ICON2               ICON                    "BKPicture\\ICON2.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "About Multi-Para Monitor"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "Multi-Parameters Monitor,2.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014-2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,114,41,50,14,WS_GROUP
+END
+
+IDD_MULTI_PARAMONITOR_DIALOG DIALOGEX 0, 0, 414, 207
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "RelaTime",IDC_STATIC_REALTIME,322,163,85,8
+    LTEXT           "Ecg5",IDC_STATIC_ECG5,79,35,16,8
+    LTEXT           "NIBP",IDC_STATIC_NIBP,295,192,16,8
+    LTEXT           "Ecg3",IDC_STATIC_ECG3,7,61,16,8
+    LTEXT           "Ecg1",IDC_STATIC_ECG1,7,7,16,8
+    LTEXT           "SpO2Wave",IDC_STATIC_SPO2WAVE,7,166,36,8
+    LTEXT           "Ecg2",IDC_STATIC_ECG2,7,34,16,8
+    LTEXT           "Ecg4",IDC_STATIC_ECG4,79,9,16,8
+    LTEXT           "RespWave",IDC_STATIC_RESPWAVE,7,88,34,17
+    LTEXT           "SpO2Info",IDC_STATIC_SPO2INFO,141,149,31,8
+    LTEXT           "Ecg6",IDC_STATIC_ECG6,79,63,16,8
+    CONTROL         "",IDC_PROGRESS_SPO2,"msctls_progress32",PBS_VERTICAL | WS_BORDER,72,145,10,55
+    LTEXT           "EcgInfo",IDC_STATIC_ECGINFO,215,54,25,8
+    LTEXT           "RespInfo",IDC_STATIC_RESPINFO,218,70,28,8
+    LTEXT           "RempInfo",IDC_STATIC_TEMPINFO,217,90,31,8
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 316, 181
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Quit",IDCANCEL,268,7,41,25
+    CTEXT           "Time",IDC_STATIC_TIME,18,57,16,8
+    PUSHBUTTON      "Patient",IDC_BUTTON_SETPATIENT,169,7,41,25
+    PUSHBUTTON      "ECG",IDC_BUTTON_SETMENU,26,5,41,25
+    PUSHBUTTON      "NBP",IDC_BUTTON_NBP,73,5,41,25
+    PUSHBUTTON      "SpO2",IDC_BUTTON_SPO2,120,5,41,25
+    PUSHBUTTON      "Test Info",IDC_BUTTON_DEBUGINFO,222,7,41,25
+    PUSHBUTTON      "Time",IDC_BUTTON_TIME,69,74,88,14
+    COMBOBOX        IDC_COM_PORT,43,123,99,30,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SETPATIENT_DIALOG DIALOGEX 0, 0, 183, 147
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Setting Patient Type"
+FONT 8, "Waukegan LDO Extended", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   " OK",IDOK,90,114,50,19
+    PUSHBUTTON      "Quit",IDCANCEL,19,114,50,19
+    CONTROL         "    Adult",IDC_RADIO_ADULT,"Button",BS_AUTORADIOBUTTON | WS_GROUP,93,22,41,10
+    CONTROL         "    Child",IDC_RADIO_CHILD,"Button",BS_AUTORADIOBUTTON,93,53,39,10
+    CONTROL         "    Neonate",IDC_RADIO_NEWBORN,"Button",BS_AUTORADIOBUTTON,93,84,51,10
+    CONTROL         "     ECG",IDC_CHECK_ECG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,22,39,10
+    CONTROL         "    NIBP",IDC_CHECK_NIBP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,53,39,10
+    CONTROL         "    SpO2",IDC_CHECK_SPO2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,84,41,10
+    GROUPBOX        "Module Sel",IDC_STATIC,14,7,61,99
+    GROUPBOX        "Patient Type",IDC_STATIC,81,7,83,99
+END
+
+IDD_DEBUGINFO_DIALOG DIALOGEX 0, 0, 356, 259
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Test Informaiton"
+FONT 8, "Waukegan LDO Extended", 400, 0, 0x0
+BEGIN
+    LTEXT           "Lead Mode",IDC_STATIC_LEAD_SET_TXT,7,7,36,8
+    LTEXT           "NIBP_Info",IDC_STATIC_NIBP_CURRPRS,206,25,34,8
+    LTEXT           "NIBP_Info",IDC_STATIC_NIBP_PATIENTTYPE,206,50,34,8
+    LTEXT           "NIBP_Info",IDC_STATIC_NIBP_MODE,208,88,34,8
+    LTEXT           "NIBP_Info",IDC_STATIC_NIBP_ERR,208,132,34,8
+    CTEXT           "                 --------",IDC_STATIC_LEAD_SET,45,18,56,8
+    LTEXT           "Lead Status",IDC_STATIC_ELECTRODE_TXT,7,40,39,8
+    LTEXT           "Electrode State",IDC_STATIC_RA_OFF,7,58,50,8
+    LTEXT           "Electrode State",IDC_STATIC_LA_OFF,73,58,51,8
+    LTEXT           "Electrode State",IDC_STATIC_LL_OFF,7,78,50,8
+    LTEXT           "Electrode State",IDC_STATIC_RL_OFF,73,78,50,8
+    LTEXT           "Channel Signal",IDC_STATIC_CHANNEL_EXIST_TXT,7,108,48,8
+    LTEXT           "Channel Signal",IDC_STATIC_CHI_OVLD,7,170,48,8
+    LTEXT           "Channel Signal",IDC_STATIC_CHII_OVLD,75,170,48,8
+    LTEXT           "Channelxh",IDC_STATIC_CHI_EXIST,7,129,35,8
+    LTEXT           "Channel Saturation",IDC_STATIC_CHANNEL_OVLD_TXT,7,152,62,8
+    LTEXT           "Channelxh",IDC_STATIC_CHII_EXIST,56,128,35,8
+END
+
+IDD_NBPCALI_DIALOG DIALOGEX 0, 0, 163, 242
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Pressure Calibration"
+FONT 8, "Waukegan LDO Extended", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,85,222,50,14
+    CONTROL         "                 Manual",IDC_RADIO_MANUAL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,43,32,80,10
+    CONTROL         "                 Auto",IDC_RADIO_AUTO,"Button",BS_AUTORADIOBUTTON,43,53,80,10
+    GROUPBOX        "Calibration Mode",IDC_STATIC,20,8,126,109
+    GROUPBOX        "Coefficient Setting",IDC_STATIC,20,125,126,93
+    LTEXT           "Measured Value",IDC_STATIC,23,148,62,8
+    LTEXT           "Reference Value",IDC_STATIC,23,175,63,8
+    EDITTEXT        IDC_EDIT_PRS1,86,146,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PRS2,86,171,48,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Start",IDC_BUTTON_START,29,92,50,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,85,92,50,14
+    PUSHBUTTON      "Setting",IDC_BUTTON_SET,85,197,50,14
+    EDITTEXT        IDC_EDIT_CALIPRS,52,73,48,14,ES_AUTOHSCROLL
+    LTEXT           "mmHg",IDC_STATIC,104,75,44,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "000903a8"
+        BEGIN
+            VALUE "CompanyName", "Zug Medical Systems"
+            VALUE "FileDescription", "TODO: Evaluation Software for Multiparameter Module"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Multi_Para Monitor.exe"
+            VALUE "LegalCopyright", "TODO: (C) Zug Medical Systems SAS"
+            VALUE "OriginalFilename", "Multi_Para Monitor.exe"
+            VALUE "ProductName", "TODO: MMP-EVAL-SW"
+            VALUE "ProductVersion", "2.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x9, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_MULTI_PARAMONITOR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 407
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 174
+    END
+
+    IDD_SETPATIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_DEBUGINFO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 349
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 252
+    END
+
+    IDD_NBPCALI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 235
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAINBK              BITMAP                  "BKPicture\\MainBK.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_DEBUGINFO_DIALOG AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+IDD_MAIN_DIALOG AFX_DIALOG_LAYOUT 
+BEGIN
+    0x0000
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "Multi_Para Monitor(&A)..."
+END
+
+STRINGTABLE 
+BEGIN
+    ID_32940                "ID_NBP_SET_MEASURE_MODE_AUTO_30MIN"
+END
+
+#endif    // 英语(非特定语言) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Multi_ParaMonitor.rc2"  // ·? Microsoft Visual C++ ±à?-μ?×ê?′
+#include "l.CHS\afxres.rc"      // ±ê×?×é?t
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
