@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 #include "StaticResultInfo.h"
+#include "kirim.h"
 
 
 // CStaticResultInfo

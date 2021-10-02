@@ -55,7 +55,7 @@ void CStaticEcgWave::OnPaint()
 	// TODO: Add your message handler code here
 	// Do not call CStaticWave::OnPaint() for painting messages
 	DrawWave(&dc);
-
+	
 	ShowInfo(&dc);
 
 	ReleaseDC(&dc);
@@ -65,6 +65,7 @@ void CStaticEcgWave::OnPaint()
 void CStaticEcgWave::ShowInfo(CPaintDC * pDC)
 {
 	CString strInfo;
+	string Channel;
 	
 	switch ( m_tChannel ) {
 		case ECG_CHANNEL_I:
@@ -79,7 +80,6 @@ void CStaticEcgWave::ShowInfo(CPaintDC * pDC)
 		default:
 			strInfo = _T("");
 	}
-	
 	switch ( m_tLead ) {
 		case ECG_LEAD_CAL:
 			strInfo += _T("Calibration Mode, ");
@@ -159,6 +159,7 @@ void CStaticEcgWave::ShowInfo(CPaintDC * pDC)
 		default:
 			break;
 	}
+	
 
 	CFont tFont;
 	tFont.CreateFont(
@@ -187,7 +188,7 @@ void CStaticEcgWave::ShowInfo(CPaintDC * pDC)
 
 	pDC->SelectObject(pcOldFont);
 	
-
+	
 }
 
 void CStaticEcgWave::SetFilter(ECG_FILTER_MODE tEcgFilter)

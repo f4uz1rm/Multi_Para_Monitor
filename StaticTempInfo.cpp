@@ -106,6 +106,7 @@ void CStaticTempInfo::OnPaint()
 	CString strTemp2;
 	if ( m_uiTemp1 == 550 ) {
 		strTemp1.Format(_T("--.-"));
+	
 	}
 	else {
 		strTemp1.Format(_T("%.1f"), (float)m_uiTemp1 / 10); kirimFloat((float)m_uiTemp1 / 10, "temp1.txt");
@@ -113,6 +114,7 @@ void CStaticTempInfo::OnPaint()
 
 	if ( m_uiTemp2 == 550 ) {
 		strTemp2.Format(_T("--.-"));
+	
 	}
 	else {
 		strTemp2.Format(_T("%.1f"), (float)m_uiTemp2 / 10); kirimFloat((float)m_uiTemp2 / 10, "temp2.txt");

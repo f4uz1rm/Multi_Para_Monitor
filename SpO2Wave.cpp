@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Multi_Para Monitor.h"
 #include "SpO2Wave.h"
+#include "kirim.h"
 
 // CStaticWave
 
@@ -161,70 +162,107 @@ void CSpO2Wave::SetSpO2Status(UCHAR ucStatu1,UCHAR ucStatu2)
 {
 	BOOL wrongFlag = FALSE;
 	CString str = L"";
+	string nameStatus;
+	
 
 	if((ucStatu1&SYS_HYPOPERFUSION)==SYS_HYPOPERFUSION)
 	{
 		str ="Hypoperfusion" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
 	}
 	if((ucStatu1&SYS_MOVEMEMT_DISTURB)==SYS_MOVEMEMT_DISTURB)
 	{
 		str ="Movement disturbance" ;
 		wrongFlag = true;
+		kirimString(nameStatus, "statusSpo2.txt");
 	}
 	if((ucStatu1&SYS_HYPER_MOVEMEMT_DISTURB)==SYS_HYPER_MOVEMEMT_DISTURB)
 	{
 		str ="Excessive movement disturbance" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
 	}
 	if((ucStatu1&SYS_SEARCH_PULSE)==SYS_SEARCH_PULSE)
 	{
 		str ="Search for pulse wave" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+		
 	}
 	if((ucStatu1&SYS_LONGTIME_SEARCH_PULSE_NO)==SYS_LONGTIME_SEARCH_PULSE_NO)
 	{
 		str ="The pulse of search time is too long/no pulse wave" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
 	}
 	if((ucStatu1&SYS_LED_DITACHED)==SYS_LED_DITACHED)
 	{
 		str ="Sensor disconnected" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
 	}
 	if((ucStatu1&SYS_FIGURE_NOT_IN)==SYS_FIGURE_NOT_IN)
 	{
 		str ="Finger Off" ;
-		wrongFlag = true;
+		wrongFlag = true; 
+		nameStatus = CStringA(str);
+		kirimString(nameStatus,"statusSpo2.txt");
 	}
 	if((ucStatu1&SYS_LED_ERROR)==SYS_LED_ERROR)
 	{
 		str ="Sensor fault" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
 	}
 	if((ucStatu2&SYS_HARDWARE_ERROR)==SYS_HARDWARE_ERROR)
 	{
 		str ="Hardware fault" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+
 	}
 	if((ucStatu2&SYS_BACKLIGHT_TOOBRIGHT)==SYS_BACKLIGHT_TOOBRIGHT)
 	{
 		str ="Background light is too strong" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+
 	}
 	if((ucStatu2&SYS_LED_UNMATCHING)==SYS_LED_UNMATCHING)
 	{
 		str ="Sensor does not match" ;
 		wrongFlag = true;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
 	}
 	if(!wrongFlag)
 	{
 		str = "Module working properly";
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
+	
+		
 	}
 //////////////////////////////////////////////////////////////////////////
 	if (m_StrRESPStatus == str)
 	{
 		return;
+		nameStatus = CStringA(str);
+		kirimString(nameStatus, "statusSpo2.txt");
 	}
 	else
 	{
@@ -232,6 +270,7 @@ void CSpO2Wave::SetSpO2Status(UCHAR ucStatu1,UCHAR ucStatu2)
 	/*	CRect cRect(m_uiWidth - 500, 0,m_uiWidth, 25);
 		InvalidateRect(cRect, false);*/
 		Invalidate();
+		
 	}
 }
 
